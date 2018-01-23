@@ -5,10 +5,20 @@
     <link>http://www.benweis.me/blog/</link>
     <description>Recent content in Blog on Benjamin Weis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 Dec 2017 14:17:08 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2018 14:17:08 -0500</lastBuildDate>
     
 	<atom:link href="http://www.benweis.me/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programming the Sum Square Problem</title>
+      <link>http://www.benweis.me/blog/programming-the-sum-square-problem/</link>
+      <pubDate>Tue, 23 Jan 2018 14:17:08 -0500</pubDate>
+      
+      <guid>http://www.benweis.me/blog/programming-the-sum-square-problem/</guid>
+      <description>I recently watched an interesting video on the Numberphile YouTube channel where Matt Parker discuses the &amp;lsquo;Sum Square Problem&amp;rsquo;. The video presents a problem
+  The gist</description>
+    </item>
     
     <item>
       <title>How to Build a Simple Portfolio Website Using Github Pages</title>
