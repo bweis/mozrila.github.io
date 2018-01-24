@@ -22,7 +22,7 @@ The Problem with sqlplus Out of the box, sqlplus is quite frustrating to use bec
     </item>
     
     <item>
-      <title>Connect to Purdue CS files using SSHF</title>
+      <title>Connect to Purdue CS files using SSHFS</title>
       <link>http://www.benweis.me/blog/connect-to-purdue-cs-files-using-sshfs/</link>
       <pubDate>Mon, 12 Dec 2016 12:00:00 -0500</pubDate>
       
