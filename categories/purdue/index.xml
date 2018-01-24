@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Purdue on Benjamin Weis</title>
+    <link>http://www.benweis.me/categories/purdue/</link>
+    <description>Recent content in Purdue on Benjamin Weis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 23 Jan 2016 14:17:08 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.benweis.me/categories/purdue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connect to Purdue CS files using SSHF</title>
+      <link>http://www.benweis.me/blog/connect-to-purdue-cs-files-using-sshfs/</link>
+      <pubDate>Sat, 23 Jan 2016 14:17:08 -0500</pubDate>
+      
+      <guid>http://www.benweis.me/blog/connect-to-purdue-cs-files-using-sshfs/</guid>
+      <description>Here’s a quick tutorial on how I access my Purdue CS files remotely so that I can still use all my preferred local development tools, like Sublime Text and my shell customizations.
+Install Required Software on Mac OS X I assume you already have Brew and Homebrew Cask installed on your Mac.
+ Use cask to install osxfuse:  brew cask install osxfuse  Use cask to install sshfs:  brew cask install sshfs Mount Your Remote Directory  Run the following command to mount the directory to your local machine:  sshfs &amp;lt;username&amp;gt;@data.</description>
+    </item>
+    
+  </channel>
+</rss>
