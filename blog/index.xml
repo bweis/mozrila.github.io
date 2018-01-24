@@ -16,8 +16,8 @@
       <pubDate>Tue, 23 Jan 2018 14:17:08 -0500</pubDate>
       
       <guid>http://www.benweis.me/blog/programming-the-sum-square-problem/</guid>
-      <description>I recently watched an interesting video on the Numberphile YouTube channel where Matt Parker discuses the &amp;lsquo;Sum Square Problem&amp;rsquo;. The video presents a problem
-  The gist</description>
+      <description>I recently watched an interesting video on the Numberphile YouTube channel where Matt Parker discuses the &amp;lsquo;Sum Square Problem&amp;rsquo;. The video can be seen below.
+  The video mentions that the problem is only solved for where n is less than ~300. Over the next week I will be attempting to solve this problem for a larger n than anyone has ever solved before!</description>
     </item>
     
     <item>
