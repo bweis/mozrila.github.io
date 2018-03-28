@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sqlplus on Benjamin Weis</title>
+    <link>http://www.benweis.me/tags/sqlplus/</link>
+    <description>Recent content in Sqlplus on Benjamin Weis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 17 Nov 2017 12:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.benweis.me/tags/sqlplus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Making sqlplus Usable</title>
+      <link>http://www.benweis.me/blog/making-sqlplus-usable/</link>
+      <pubDate>Fri, 17 Nov 2017 12:00:00 -0500</pubDate>
+      
+      <guid>http://www.benweis.me/blog/making-sqlplus-usable/</guid>
+      <description>I have been taking CS 348: Information Systems this semester and found that using sqlplus on the lab machines is borderline maddening.
+A friend helped me configure the rlwrap wrapper utility to make sqlplus less frustrating to use. I wanted to document the process for anyone else who wants sane keyboard editing inside sqlplus.
+The Problem with sqlplus Out of the box, sqlplus is quite frustrating to use because it doesn&amp;rsquo;t have line editor functionality.</description>
+    </item>
+    
+  </channel>
+</rss>

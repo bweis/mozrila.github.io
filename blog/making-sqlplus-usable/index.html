@@ -7,6 +7,7 @@
 <meta name='description' content='I have been taking CS 348: Information Systems this semester and found that using sqlplus on the lab machines is borderline maddening.
 A friend helped me configure the rlwrap wrapper utility to make sqlplus less frustrating to use. I wanted to document the process for anyone else who wants sane keyboard editing inside sqlplus.
 The Problem with sqlplus Out of the box, sqlplus is quite frustrating to use because it doesn&rsquo;t have line editor functionality.'>
+<meta name='theme-color' content='#98700D'>
 
 <meta property='og:title' content='Making sqlplus Usable - Benjamin Weis'>
 <meta property='og:description' content='I have been taking CS 348: Information Systems this semester and found that using sqlplus on the lab machines is borderline maddening.
@@ -14,7 +15,7 @@ A friend helped me configure the rlwrap wrapper utility to make sqlplus less fru
 The Problem with sqlplus Out of the box, sqlplus is quite frustrating to use because it doesn&rsquo;t have line editor functionality.'>
 <meta property='og:url' content='http://www.benweis.me/blog/making-sqlplus-usable/'>
 <meta property='og:site_name' content='Benjamin Weis'>
-<meta property='og:type' content='article'><meta property='article:section' content='Blog'><meta property='article:published_time' content='2017-11-17T12:00:00-05:00'/><meta property='article:modified_time' content='2017-11-17T12:00:00-05:00'/><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/616719497e3cb092b2889290fb6d839a?s=256'><meta property='article:author' content='https://facebook.com/bweis96'><meta property='article:section' content='Blog'><meta property='article:tag' content='purdue'><meta property='article:tag' content='sqlplus'><meta property='article:tag' content='development'><meta property='article:published_time' content='2017-11-17T12:00:00-05:00'/><meta property='article:modified_time' content='2017-11-17T12:00:00-05:00'/><meta name='twitter:card' content='summary'><meta name='twitter:creator' content='@TheRealBenWeis'>
 
 <meta name="generator" content="Hugo 0.34" />
 
@@ -23,56 +24,109 @@ The Problem with sqlplus Out of the box, sqlplus is quite frustrating to use bec
   
   
   <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/custom.css'>
+<link rel='stylesheet' href='/assets/css/main.045169bd.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#98700D;}
+</style>
+
 </head>
 
 
-<body class='page type-blog'>
+<body class='page type-blog has-sidebar sidebar-sticky'>
+
   <div class='site'>
 
-    <a class='screen-reader' href='#main'>Skip to Content</a>
+    <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
-    <header id='header' class='header-container'>
-      <div class='header site-header'>
-        <nav id='main-menu' class='main-menu-container' aria-label='Main Menu'>
-  <ul class='main-menu'>
-  <li>
-      <a href='/'>Home</a>
-    </li>
-  <li>
-      <a href='/blog/'>Blog</a>
-    </li>
-  <li>
-      <a href='/about/'>about</a>
-    </li>
-  <li>
-      <a href='/ben_weis_resume.pdf'>Resume</a>
-    </li>
-  
-  </ul>
+<div id='sidebar' class='sidebar'>
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/img/avatar.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Benjamin Weis
+    </h2>
+    <div class='desc'>
+    Software Engineer and Burrito Enthusiast
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/development' style='font-size:2em'>Development</a>
+      </li><li>
+        <a href='/tags/homebrew' style='font-size:1em'>Homebrew</a>
+      </li><li>
+        <a href='/tags/number-theory' style='font-size:1em'>Number theory</a>
+      </li><li>
+        <a href='/tags/projects' style='font-size:1em'>Projects</a>
+      </li><li>
+        <a href='/tags/purdue' style='font-size:2em'>Purdue</a>
+      </li><li>
+        <a href='/tags/sqlplus' style='font-size:1em'>Sqlplus</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='hamburger hamburger--arrow sidebar-toggler' type='button' aria-controls='sidebar' aria-expanded='false'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/blog/'>Blog</a>
+      </li><li class='item'>
+        <a href='/about/'>About</a>
+      </li><li class='item'>
+        <a href='/ben_weis_resume.pdf'>Resume</a>
+      </li></ul>
+  </div>
 </nav>
 
-        <div class='header-info'>
-          
-          <p class='site-title title'>Benjamin Weis</p>
-          
-          <p class='site-description subtitle'>Software Engineer and Burrito Enthusiast</p>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Benjamin Weis</p><p class='desc site-desc'>Software Engineer and Burrito Enthusiast</p>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+
+      <main id='content'>
 
 
-<main id='main' class='main'>
-  <article lang='en' class='entry'>
-    <header class='header-container'>
-  <div class='header entry-header'>
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
     <div class='header-info'>
       <h1 class='title'>Making sqlplus Usable</h1>
       
 
     </div>
     
-<div class='meta'>
+<div class='entry-meta'>
   <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -81,11 +135,17 @@ The Problem with sqlplus Out of the box, sqlplus is quite frustrating to use bec
   <line x1="3" y1="10" x2="21" y2="10"/>
   
 </svg>
-<span class='screen-reader'>Posted on </span>
-  <time class='date' datetime='2017-11-17T12:00:00-05:00'>2017, Nov 17</time>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2017-11-17T12:00:00-05:00'>2017, Nov 17</time>
 </span>
 
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/benweis'>Benjamin Weis</a></span>
   
 <span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -103,10 +163,10 @@ One min read
   </div>
 </header>
 
-    
-    
+  
+  
 
-    <div class='entry-content'>
+  <div class='container entry-content'>
   
 
 <p>I have been taking <a href="https://selfservice.mypurdue.purdue.edu/prod/bwckctlg.p_disp_course_detail?cat_term_in=201820&amp;subj_code_in=CS&amp;crse_numb_in=34800" target="_blank">CS 348: Information Systems</a> this semester and found that using sqlplus on the lab machines is borderline maddening.</p>
@@ -150,26 +210,27 @@ make install
 
 </div>
 
-    
-<footer class='entry-footer-container'>
-  <div class='entry-footer'>
-  <div class='categories'>
-  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
-  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
 </span>
-  <span class='screen-reader'>Categories: </span><a class='category' href='/categories/purdue'>Purdue</a></div>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/purdue'>Purdue</a>, <a class='tag' href='/tags/sqlplus'>Sqlplus</a>, <a class='tag' href='/tags/development'>Development</a></div>
 
   </div>
 </footer>
 
 
-  </article>
-  
-<nav class='entry-nav-container'>
-  <div class='entry-nav'><div class='prev-entry'>
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
       <a href='/blog/connect-to-purdue-cs-files-using-sshfs/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -178,10 +239,10 @@ make install
   
 </svg>
  Previous</span>
-        <span class='screen-reader'>Previous post: </span>Connect to Purdue CS files using SSHFS</a>
-    </div><div class='next-entry'>
+        <span class='screen-reader-text'>Previous post: </span>Connect to Purdue CS files using SSHFS</a>
+    </div><div class='next-entry sep-before'>
       <a href='/blog/programming-the-sum-square-problem/'>
-        <span class='screen-reader'>Next post: </span>Programming the Sum Square Problem<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+        <span class='screen-reader-text'>Next post: </span>Programming the Sum Square Problem<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>
   <polyline points="14 6 20 12 14 18"/>
@@ -192,9 +253,10 @@ make install
     </div></div>
 </nav>
 
-  
-<div class='comments-container'>
-  <div id="disqus_thread"></div>
+
+<section class='comments'>
+  <div class='container sep-before'>
+    <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
     
@@ -214,17 +276,18 @@ make install
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+  </div>
+</section>
 
-</main>
 
-    <footer id='footer' class='footer-container'>
-      <div class='footer'>
-        <div class='social-menu-container'>
-  <nav aria-label='Social Menu'>
-    <ul class='social-menu'><li>
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'>
+          <section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
         <a href='https://github.com/mozrila' target='_blank' rel='noopener'>
-          <span class='screen-reader'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
   
@@ -232,7 +295,7 @@ make install
 </a>
       </li><li>
         <a href='https://facebook.com/bweis96' target='_blank' rel='noopener'>
-          <span class='screen-reader'>Open Facebook account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>Open Facebook account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
   
@@ -240,7 +303,7 @@ make install
 </a>
       </li><li>
         <a href='https://twitter.com/Real_Ben_Weis' target='_blank' rel='noopener'>
-          <span class='screen-reader'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
   
@@ -248,7 +311,7 @@ make install
 </a>
       </li><li>
         <a href='mailto:bweis96@gmail.com' target='_blank' rel='noopener'>
-          <span class='screen-reader'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
   <polyline points="22,6 12,13 2,6"/>
@@ -257,30 +320,29 @@ make install
 </a>
       </li><li>
         <a href='https://linkedin.com/in/bweis96' target='_blank' rel='noopener'>
-          <span class='screen-reader'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
-  <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
   
 </svg>
 </a>
       </li></ul>
   </nav>
-</div>
-        <div class='copyright'>
-  <p>
-        
-          
-        
-      
-
-       &copy; 2017-2018 Benjamin Weis 
-  </p>
+</section>
+          <div class='copyright'>
+  <p> &copy; 2017-2018 Benjamin Weis </p>
 </div>
 
-      </div>
-    </footer>
+        </div>
+      </footer>
 
-  </div><script src='/assets/js/main.5871befd.js'></script><script src='/js/custom.js'></script></body>
+    </div>
+  </div><div class='sidebar-overlay'></div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.80cd10bb.js'></script><script src='/js/custom.js'></script>
+</body>
 
 </html>
 

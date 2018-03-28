@@ -33,6 +33,11 @@
   
   <url>
     <loc>http://www.benweis.me/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/authors/benweis/</loc>
+    <lastmod>2018-01-23T14:17:08-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,24 +47,54 @@
   </url>
   
   <url>
-    <loc>http://www.benweis.me/page/</loc>
+    <loc>http://www.benweis.me/tags/development/</loc>
+    <lastmod>2017-11-17T12:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.benweis.me/categories/programming/</loc>
+    <loc>http://www.benweis.me/tags/homebrew/</loc>
+    <lastmod>2016-12-12T12:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/tags/number-theory/</loc>
     <lastmod>2018-01-23T14:17:08-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.benweis.me/categories/purdue/</loc>
+    <loc>http://www.benweis.me/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/tags/projects/</loc>
+    <lastmod>2018-01-23T14:17:08-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/tags/purdue/</loc>
+    <lastmod>2017-11-17T12:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/tags/sqlplus/</loc>
     <lastmod>2017-11-17T12:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.benweis.me/tags/</loc>
+    <lastmod>2017-11-17T12:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
