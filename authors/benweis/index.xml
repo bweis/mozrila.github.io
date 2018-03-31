@@ -20,29 +20,5 @@
   The video mentions that the problem is only solved for where n is less than ~300. Over the next week I will be attempting to solve this problem for a larger n than anyone has ever solved before!</description>
     </item>
     
-    <item>
-      <title>Making sqlplus Usable</title>
-      <link>http://www.benweis.me/blog/making-sqlplus-usable/</link>
-      <pubDate>Fri, 17 Nov 2017 12:00:00 -0500</pubDate>
-      
-      <guid>http://www.benweis.me/blog/making-sqlplus-usable/</guid>
-      <description>I have been taking CS 348: Information Systems this semester and found that using sqlplus on the lab machines is borderline maddening.
-A friend helped me configure the rlwrap wrapper utility to make sqlplus less frustrating to use. I wanted to document the process for anyone else who wants sane keyboard editing inside sqlplus.
-The Problem with sqlplus Out of the box, sqlplus is quite frustrating to use because it doesn&amp;rsquo;t have line editor functionality.</description>
-    </item>
-    
-    <item>
-      <title>Connect to Purdue CS files using SSHFS</title>
-      <link>http://www.benweis.me/blog/connect-to-purdue-cs-files-using-sshfs/</link>
-      <pubDate>Mon, 12 Dec 2016 12:00:00 -0500</pubDate>
-      
-      <guid>http://www.benweis.me/blog/connect-to-purdue-cs-files-using-sshfs/</guid>
-      <description>Here’s a quick tutorial on how I access my Purdue CS files remotely so that I can still use all my preferred local development tools, like Sublime Text and my shell customizations.
-Install Required Software on Mac OS X I assume you already have Brew and Homebrew Cask installed on your Mac.
- Use cask to install osxfuse:
-brew cask install osxfuse Use homebrew to install sshfs:
-brew install sshfs  Mount Your Remote Directory  Run the following command to mount the directory to your local machine:  sshfs &amp;lt;username&amp;gt;@data.</description>
-    </item>
-    
   </channel>
 </rss>
