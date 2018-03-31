@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on Benjamin Weis</title>
-    <link>http://www.benweis.me/tags/development/</link>
-    <description>Recent content in Development on Benjamin Weis</description>
+    <title>Swift on Benjamin Weis</title>
+    <link>http://www.benweis.me/tags/swift/</link>
+    <description>Recent content in Swift on Benjamin Weis</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 17 Mar 2018 12:00:00 -0500</lastBuildDate>
     
-	<atom:link href="http://www.benweis.me/tags/development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.benweis.me/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

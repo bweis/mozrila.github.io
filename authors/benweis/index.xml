@@ -5,10 +5,19 @@
     <link>http://www.benweis.me/authors/benweis/</link>
     <description>Recent content in Benweis on Benjamin Weis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Jan 2018 14:17:08 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 17 Mar 2018 12:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://www.benweis.me/authors/benweis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building SnapLensNinja</title>
+      <link>http://www.benweis.me/blog/building-snaplensninja/</link>
+      <pubDate>Sat, 17 Mar 2018 12:00:00 -0500</pubDate>
+      
+      <guid>http://www.benweis.me/blog/building-snaplensninja/</guid>
+      <description>TODO: Write things. See www.snaplens.ninja Test.</description>
+    </item>
     
     <item>
       <title>Programming the Sum Square Problem</title>

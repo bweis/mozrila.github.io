@@ -5,10 +5,28 @@
     <link>http://www.benweis.me/tags/</link>
     <description>Recent content in Tags on Benjamin Weis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Jan 2018 14:17:08 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 17 Mar 2018 12:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://www.benweis.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Development</title>
+      <link>http://www.benweis.me/tags/development/</link>
+      <pubDate>Sat, 17 Mar 2018 12:00:00 -0500</pubDate>
+      
+      <guid>http://www.benweis.me/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IOS</title>
+      <link>http://www.benweis.me/tags/ios/</link>
+      <pubDate>Sat, 17 Mar 2018 12:00:00 -0500</pubDate>
+      
+      <guid>http://www.benweis.me/tags/ios/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Number theory</title>
@@ -25,6 +43,15 @@
       <pubDate>Tue, 23 Jan 2018 14:17:08 -0500</pubDate>
       
       <guid>http://www.benweis.me/tags/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>http://www.benweis.me/tags/swift/</link>
+      <pubDate>Sat, 17 Mar 2018 12:00:00 -0500</pubDate>
+      
+      <guid>http://www.benweis.me/tags/swift/</guid>
       <description></description>
     </item>
     

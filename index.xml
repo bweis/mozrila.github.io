@@ -5,7 +5,7 @@
     <link>http://www.benweis.me/</link>
     <description>Recent content in Home on Benjamin Weis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Jan 2018 14:17:08 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 17 Mar 2018 12:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://www.benweis.me/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,15 @@
       <description>I&amp;rsquo;m a 21-year-old computer science student at Purdue University where I will receive my Bachelor&amp;rsquo;s Degree in Computer Science with a focus in Software Engineering.
 When I&amp;rsquo;m not writing software, I enjoy volunteering with FIRST Robotics teams teaching high school students how to program and how to attack design problems simply and effectively.
 For a closer look at the professional work I&amp;rsquo;ve done, check out my resume. If you&amp;rsquo;re interested in reaching out to me, shoot me an e-mail.</description>
+    </item>
+    
+    <item>
+      <title>Building SnapLensNinja</title>
+      <link>http://www.benweis.me/blog/building-snaplensninja/</link>
+      <pubDate>Sat, 17 Mar 2018 12:00:00 -0500</pubDate>
+      
+      <guid>http://www.benweis.me/blog/building-snaplensninja/</guid>
+      <description>TODO: Write things. See www.snaplens.ninja Test.</description>
     </item>
     
     <item>

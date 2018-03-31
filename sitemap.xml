@@ -4,16 +4,21 @@
   
   <url>
     <loc>http://www.benweis.me/</loc>
-    <lastmod>2018-01-23T14:17:08-05:00</lastmod>
+    <lastmod>2018-03-17T12:00:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.benweis.me/blog/</loc>
-    <lastmod>2018-01-23T14:17:08-05:00</lastmod>
+    <lastmod>2018-03-17T12:00:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.benweis.me/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/blog/building-snaplensninja/</loc>
+    <lastmod>2018-03-17T12:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -27,12 +32,24 @@
   
   <url>
     <loc>http://www.benweis.me/authors/benweis/</loc>
-    <lastmod>2018-01-23T14:17:08-05:00</lastmod>
+    <lastmod>2018-03-17T12:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.benweis.me/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/tags/development/</loc>
+    <lastmod>2018-03-17T12:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.benweis.me/tags/ios/</loc>
+    <lastmod>2018-03-17T12:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -59,8 +76,14 @@
   </url>
   
   <url>
+    <loc>http://www.benweis.me/tags/swift/</loc>
+    <lastmod>2018-03-17T12:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.benweis.me/tags/</loc>
-    <lastmod>2018-01-23T14:17:08-05:00</lastmod>
+    <lastmod>2018-03-17T12:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
